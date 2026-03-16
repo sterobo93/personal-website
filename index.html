@@ -111,48 +111,59 @@
                     their market share through digital channels.</p>
             </div>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
-                    <h3>Facebook & LinkedIn Ads</h3>
-                    <p>Drive targeted traffic and generate leads with highly optimised Facebook and LinkedIn advertising
-                        campaigns tailored to your specific business goals.</p>
+            <div class="services-interactive-wrapper">
+                <!-- Left Column: Service List -->
+                <div class="services-list-container">
+                    <ul class="services-list" id="servicesList">
+                        <!-- Items rendered by JS or hardcoded with data attributes -->
+                        <li class="service-item active" data-id="0">
+                            <span class="service-number">01</span>
+                            <span class="service-title">Facebook & LinkedIn Ads</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                        <li class="service-item" data-id="1">
+                            <span class="service-number">02</span>
+                            <span class="service-title">Social Media Management</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                        <li class="service-item" data-id="2">
+                            <span class="service-number">03</span>
+                            <span class="service-title">Digital PR Campaigns</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                        <li class="service-item" data-id="3">
+                            <span class="service-number">04</span>
+                            <span class="service-title">Content Strategy & Copywriting</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                        <li class="service-item" data-id="4">
+                            <span class="service-number">05</span>
+                            <span class="service-title">Website Creation</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                        <li class="service-item" data-id="5">
+                            <span class="service-number">06</span>
+                            <span class="service-title">Video Editing</span>
+                            <span class="service-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Service 1.5 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3>Social Media Management</h3>
-                    <p>Build a loyal following and increase brand awareness through engaging organic content and
-                        consistent community management across your social media profiles.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
-                    <h3>Digital PR Campaigns</h3>
-                    <p>Secure high-authority backlinks and press coverage in top-tier publications to build brand
-                        credibility, improve search engine rankings, and drive qualified referral traffic.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
-                    <h3>Content Strategy & Copywriting</h3>
-                    <p>Establish industry authority and engage your target audience with compelling, SEO-optimised blog
-                        content and a clear, unified brand voice across all your digital channels.</p>
-                </div>
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <h3>Website Creation</h3>
-                    <p>Are you looking for a professional brochure or lead-generation website? I specialise in helping
-                        local businesses create custom, bespoke websites tailored to fit your budget and needs.</p>
-                </div>
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-video"></i></div>
-                    <h3>Video Editing</h3>
-                    <p>Engage your audience with high-quality video content. I can edit both short and long format type
-                        videos to help your brand stand out.</p>
+
+                <!-- Right Column: Service Details Card -->
+                <div class="service-details-card" id="serviceDetailsCard">
+                    <div class="service-details-content">
+                        <div class="service-icon" id="serviceIcon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h3 id="serviceDetailTitle">Facebook & LinkedIn Ads</h3>
+                        <p id="serviceDetailDesc">Drive targeted traffic and generate leads with highly optimised Facebook and LinkedIn advertising campaigns tailored to your specific business goals.</p>
+                        
+                        <div class="service-tags" id="serviceTags">
+                            <span class="tag">Targeted Traffic</span>
+                            <span class="tag">Lead Generation</span>
+                            <span class="tag">Campaign Optimisation</span>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary btn-block mt-4">Get a Free Consultation <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
