@@ -1077,42 +1077,37 @@ ul {
 
 /* --- Why Work With Me Section --- */
 .why-work-with-me {
-    padding: 4rem 0;
-    background: linear-gradient(180deg, var(--color-white) 0%, var(--color-light-bg) 100%);
+    padding: 6rem 0;
     position: relative;
+    background-image: url('why-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
-.why-work-with-me::before,
-.why-work-with-me::after {
+.why-work-with-me::before {
     content: '';
     position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: 0;
-}
-.why-work-with-me::before {
-    top: -100px;
-    right: -100px;
-    width: 400px;
-    height: 400px;
-    background: rgba(51, 102, 255, 0.08);
-}
-.why-work-with-me::after {
-    bottom: -100px;
-    left: -100px;
-    width: 300px;
-    height: 300px;
-    background: rgba(162, 185, 255, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.78);
+    z-index: 1;
 }
 
 .why-work-with-me .container {
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 
 .why-work-with-me .section-header {
     margin-bottom: 2.5rem;
+}
+
+.why-work-with-me h2 {
+    color: var(--color-white);
 }
 
 .why-grid {
