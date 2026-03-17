@@ -1392,16 +1392,16 @@ ul {
     }
 
     .contact-pill {
-        padding: 0.5rem 0.8rem;
-        gap: 0.6rem;
-        font-size: 0.85rem;
-        word-break: break-word;
+        padding: 0.5rem;
+        gap: 0.5rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
 
     .contact-pill .icon-wrapper {
-        width: 36px;
-        height: 36px;
-        font-size: 0.9rem;
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
         flex-shrink: 0;
     }
 }
