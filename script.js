@@ -196,4 +196,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+// About Text Read More Toggle
+    const aboutReadMoreBtn = document.getElementById('aboutReadMoreBtn');
+    const aboutTextMore = document.getElementById('aboutTextMore');
+
+    if (aboutReadMoreBtn && aboutTextMore) {
+        aboutReadMoreBtn.addEventListener('click', () => {
+            aboutTextMore.classList.toggle('expanded');
+            
+            if (aboutTextMore.classList.contains('expanded')) {
+                aboutReadMoreBtn.innerHTML = 'Read Less <i class="fa-solid fa-chevron-up ms-1"></i>';
+            } else {
+                aboutReadMoreBtn.innerHTML = 'Read More <i class="fa-solid fa-chevron-down ms-1"></i>';
+            }
+        });
+    }
 });
