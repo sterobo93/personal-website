@@ -941,9 +941,9 @@ ul {
 }
 
 .footer-brand {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 100%;
 }
 
 .footer-logo {
