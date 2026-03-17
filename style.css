@@ -1040,7 +1040,7 @@ ul {
     padding-top: 2rem;
     border-top: 1px solid #1E293B;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 0.85rem;
 }
