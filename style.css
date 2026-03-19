@@ -26,7 +26,7 @@
     --gradient-blue: linear-gradient(135deg, #4A7AFA 0%, #254EDB 100%);
 
     /* Typography */
-    --font-primary: 'Playfair Display', serif;
+    --font-primary: 'Montserrat', sans-serif;
 
     /* Border Radius */
     --radius-sm: 8px;
