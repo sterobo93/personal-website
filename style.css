@@ -502,6 +502,7 @@ ul {
 /* --- About Section --- */
 .about {
     position: relative;
+    padding: 5rem 0; /* Reduced from 8rem 0 */
     background-image: url('about-bg.png');
     background-size: cover;
     background-position: center;
@@ -540,7 +541,7 @@ ul {
 
 .about-content h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
     color: var(--color-white);
 }
 
@@ -552,7 +553,7 @@ ul {
 }
 
 .about-text p {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem; /* Reduced from 1.75rem */
 }
 
 .about-text p:first-of-type {
@@ -560,7 +561,7 @@ ul {
     font-weight: 500;
     line-height: 1.6;
     color: var(--color-white);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem; /* Reduced from 2.5rem */
 }
 
 .read-more-btn {
@@ -831,7 +832,7 @@ ul {
 
 .contact-desc {
     margin: 0 auto 3.5rem;
-    max-width: 600px;
+    max-width: 800px;
     font-size: 1.25rem;
     color: var(--text-muted);
 }
@@ -1069,11 +1070,11 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.85rem;
 }
 
 .footer-bottom p {
     margin: 0;
+    font-size: 0.7rem;
 }
 
 .footer-legal {
