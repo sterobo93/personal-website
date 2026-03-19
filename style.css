@@ -379,13 +379,13 @@ ul {
 
 .hero-arrow-wrap {
     position: absolute;
-    right: -95px;
-    top: 15px;
+    right: -130px;
+    top: 10px;
     pointer-events: none;
 }
 
 .hero-arrow-svg {
-    width: 110px;
+    width: 130px;
     height: 90px;
     opacity: 0.8;
 }
