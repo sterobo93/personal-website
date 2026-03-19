@@ -1323,6 +1323,10 @@ ul {
         margin: 0;
     }
 
+    .hero-arrow-wrap {
+        display: none;
+    }
+
     .hero-image-wrapper {
         order: 3;
         max-width: 500px;
