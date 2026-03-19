@@ -378,6 +378,7 @@ ul {
 }
 
 .hero-arrow-wrap {
+    display: none;
     position: absolute;
     right: -115px;
     top: 12px;
@@ -388,6 +389,12 @@ ul {
     width: 115px;
     height: 95px;
     opacity: 0.8;
+}
+
+@media (min-width: 1025px) {
+    .hero-arrow-wrap {
+        display: block;
+    }
 }
 
 .hero-cta {
@@ -1339,9 +1346,6 @@ ul {
         justify-content: center;
     }
 
-    .hero-arrow-wrap {
-        display: none;
-    }
 
     .about-images {
         order: 2;
