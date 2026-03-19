@@ -366,8 +366,28 @@ ul {
 .hero-content p {
     font-size: 1.25rem;
     max-width: 90%;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     color: #4B5563;
+}
+
+.hero-p-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3.5rem;
+}
+
+.hero-arrow-wrap {
+    position: absolute;
+    right: -60px;
+    top: 10px;
+    pointer-events: none;
+}
+
+.hero-arrow-svg {
+    width: 65px;
+    height: 65px;
+    transform: rotate(10deg);
+    opacity: 0.8;
 }
 
 .hero-cta {
@@ -1304,8 +1324,17 @@ ul {
     }
 
     .hero-cta {
-        order: 4;
+        order: 5;
         justify-content: center;
+    }
+
+    .hero-p-wrap {
+        display: block;
+        margin: 0;
+    }
+
+    .hero-arrow-wrap {
+        display: none;
     }
 
     .about-images {
