@@ -374,19 +374,19 @@ ul {
 .hero-p-wrap {
     position: relative;
     display: inline-block;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .hero-arrow-wrap {
     position: absolute;
-    right: -85px;
-    top: 0;
+    right: -105px;
+    top: 25px;
     pointer-events: none;
 }
 
 .hero-arrow-svg {
-    width: 80px;
-    height: 80px;
+    width: 95px;
+    height: 110px;
     opacity: 0.8;
 }
 
