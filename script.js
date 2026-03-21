@@ -106,42 +106,42 @@ const servicesData = [
         title: "Facebook & LinkedIn Ads",
         desc: "Drive targeted traffic and generate leads with highly optimised Facebook and LinkedIn advertising campaigns tailored to your specific business goals.",
         icon: "fa-bullseye",
-        tags: []
+        tags: ["Targeted Traffic", "Lead Generation", "Campaign Optimisation"]
     },
     {
         id: 1,
         title: "Social Media Management",
         desc: "Build a loyal following and increase brand awareness through engaging organic content and consistent community management across your social media profiles.",
         icon: "fa-users",
-        tags: []
+        tags: ["Community Building", "Content Creation", "Brand Awareness"]
     },
     {
         id: 2,
         title: "Digital PR Campaigns",
         desc: "Secure high-authority backlinks and press coverage in top-tier publications to build brand credibility, improve search engine rankings, and drive qualified referral traffic.",
         icon: "fa-globe",
-        tags: []
+        tags: ["Media Coverage", "Brand Authority", "Quality Backlinks"]
     },
     {
         id: 3,
         title: "Content Strategy & Copywriting",
         desc: "Establish industry authority and engage your target audience with compelling, SEO-optimised blog content and a clear, unified brand voice across all your digital channels.",
         icon: "fa-pen-nib",
-        tags: []
+        tags: ["Brand Voice", "SEO Optimised", "Conversion Copy"]
     },
     {
         id: 4,
         title: "Website Creation",
         desc: "Are you looking for a professional brochure or lead-generation website? I specialise in helping local businesses create custom, bespoke websites tailored to fit your budget and needs.",
         icon: "fa-laptop-code",
-        tags: []
+        tags: ["Custom Design", "Fully Responsive", "Modern Layout"]
     },
     {
         id: 5,
         title: "Video Editing",
-        desc: "Engage your audience with high-quality video content. I can edit both short and long format type videos to help your brand stand out.",
+        desc: "Capture your audience with high-quality video tailored to any platform. I specialise in high-impact short-form content for TikTok, Reels, and Shorts, alongside polished long-form production for YouTube.",
         icon: "fa-video",
-        tags: []
+        tags: ["Short-Form", "Long-Form", "Platform Optimised"]
     }
 ];
 
