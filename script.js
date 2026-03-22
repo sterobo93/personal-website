@@ -76,7 +76,8 @@ const revealElements = document.querySelectorAll('section > .container > div, .s
 
 // Add reveal class to elements
 revealElements.forEach(el => {
-    if (!el.parentElement.classList.contains('hero-container') && !el.classList.contains('bg-glow')) {
+    // Exclude hero container elements and the contact section from auto-reveal to prevent scroll-jump/clipping
+    if (!el.parentElement.classList.contains('hero-container') && !el.classList.contains('bg-glow') && !el.closest('.contact')) {
         el.classList.add('reveal');
     }
 });
@@ -211,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    // Testimonial Toggle
+    // Testimonial Toggle
     const testimonialBtns = document.querySelectorAll('.testimonial-read-more');
-    testimonialBtns.forEach(btn => {
+     testimonialBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const content = btn.previousElementSibling;
             if (content && content.classList.contains('testimonial-content')) {

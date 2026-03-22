@@ -57,7 +57,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 160px; /* Safe buffer for tall fixed header */
+    scroll-padding-top: 170px; /* High clearance for the tall sticky navbar */
     overflow-x: hidden;
     width: 100%;
 }
@@ -1758,9 +1758,10 @@ ul {
 }
 
 .contact.section-padding {
-    padding-top: 4.5rem; /* Reset to standard whitespace for visual flow */
+    padding: 6rem 0; /* Uniform padding for better visual framing upon landing */
 }
 
+/* Ensure no reveal-based shifting for contact section targets */
 .contact-wrapper {
     max-width: 900px;
     margin: 0 auto;
