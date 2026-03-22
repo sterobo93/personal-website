@@ -138,8 +138,8 @@ ul {
 }
 
 .section-padding {
-    padding: 4.5rem 0;
-    scroll-margin-top: 160px; /* Offset for the sticky header */
+    padding: 6rem 0; /* Standardized for consistency */
+    scroll-margin-top: 240px; /* Generous 'premium' offset for sticky header */
 }
 
 .bg-light {
@@ -1768,7 +1768,7 @@ ul {
 }
 
 #lets-work-together {
-    scroll-margin-top: 180px; /* Specific offset for the CTA card jump */
+    scroll-margin-top: 240px; /* Matching the section offset for consistent landing */
 }
 
 .contact-cta-card {
