@@ -21,8 +21,8 @@ document.addEventListener('click', (e) => {
         if (targetElement) {
             e.preventDefault();
             
-            // Calculate dynamic offset (Force generous 240px for stability)
-            const offset = 240;
+            // Calculate dynamic offset (Standard 120px for footer/standard jumps)
+            const offset = 120;
             
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
