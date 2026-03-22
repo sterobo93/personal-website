@@ -57,7 +57,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px; /* Reduced to better blend with section padding */
+    scroll-padding-top: 160px; /* Safe buffer for tall fixed header */
     overflow-x: hidden;
     width: 100%;
 }
@@ -1758,7 +1758,7 @@ ul {
 }
 
 .contact.section-padding {
-    padding-top: 1.5rem; /* Reduced to avoid double-gap with scroll-padding */
+    padding-top: 4.5rem; /* Reset to standard whitespace for visual flow */
 }
 
 .contact-wrapper {
