@@ -10,6 +10,41 @@ if (navbar) {
     });
 }
 
+// Global Smooth Scroll Interceptor for Navigation
+document.addEventListener('click', (e) => {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (anchor) {
+        const targetId = anchor.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault();
+            
+            // Calculate offset (Navbar Height + Buffer)
+            // Using a fixed 220px offset for 'premium' spacing consistency
+            const offset = 220;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+
+            // Sync with mobile menu (if open)
+            if (mobileNav && mobileNav.classList.contains('open')) {
+                mobileNav.classList.remove('open');
+                const icon = mobileBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        }
+    }
+});
+
 // Mobile Menu Toggle
 const mobileBtn = document.querySelector('.mobile-menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -26,15 +61,6 @@ if (mobileBtn && mobileNav) {
             icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
         }
-    });
-
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileNav.classList.remove('open');
-            const icon = mobileBtn.querySelector('i');
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        });
     });
 }
 
