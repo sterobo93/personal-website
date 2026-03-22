@@ -21,9 +21,12 @@ document.addEventListener('click', (e) => {
         if (targetElement) {
             e.preventDefault();
             
-            // Calculate offset (Navbar Height + Buffer)
-            // Using a fixed 220px offset for 'premium' spacing consistency
-            const offset = 220;
+            // Calculate dynamic offset based on current navbar height
+            const navElement = document.querySelector('.navbar');
+            const navHeight = navElement ? navElement.offsetHeight : 150;
+            const safetyBuffer = 100; // Extra room for 'premium' look
+            const offset = navHeight + safetyBuffer;
+            
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
 
