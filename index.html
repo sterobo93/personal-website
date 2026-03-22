@@ -15,7 +15,7 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=56">
 </head>
 
 <body>
@@ -29,6 +29,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#results">Results</a></li>
                 <li><a href="#why-work-with-me">Why Work With Me</a></li>
             </ul>
             <div class="nav-actions">
@@ -47,6 +48,7 @@
         <ul class="mobile-nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#results">Results</a></li>
             <li><a href="#why-work-with-me">Why Work With Me</a></li>
         </ul>
     </div>
@@ -89,30 +91,65 @@
 
     <!-- About Section -->
     <section class="about section-padding" id="about">
-        <div class="container about-v3">
-            <div class="about-header reveal">
-                <h2 class="about-main-heading">Helping Businesses <br><span>Generate More Leads & Sales
-                        Online</span></h2>
-            </div>
-            <div class="about-content-v3 reveal">
-                <div class="bio-wrapper">
-                    <span class="bio-greeting">Hello</span>
-                    <h3 class="bio-name">I’m <span>Steve.</span></h3>
-                    <p class="bio-main">I work for a digital agency in Ripon and have collaborated with a wide range of
-                        brands over the years, from established companies to growing startups across sectors
-                        like e-commerce and retail.</p>
-                    <div id="aboutTextMore" class="about-text-more">
-                        <p class="bio-sub">Helping businesses strengthen their online presence with better visibility,
-                            reaching the right audience and converting traffic into meaningful results. From building
-                            brand
-                            awareness to driving sales, the focus is always on turning that traffic into real business
-                            growth.</p>
+        <div class="container about-container-v3">
+            <div class="about-main-row reveal">
+                <div class="about-header">
+                    <h2 class="about-main-heading">Helping Businesses <br><span>Generate More Leads & Sales
+                            Online</span></h2>
+                </div>
+
+                <div class="bio-testimonials">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"Steve was great to work with from start to finish. He
+                                understood exactly what I needed and turned it into a clean, easy-to-use website that
+                                reflects my business perfectly. Communication was clear throughout, and everything was
+                                delivered on time. I’d happily recommend him to anyone"</p>
+                        </div>
+                        <button class="testimonial-read-more">Read more</button>
+                        <div class="testimonial-author-info">
+                            <p class="testimonial-author">Cole Bentley</p>
+                            <p class="testimonial-business">Out & About</p>
+                        </div>
                     </div>
-                    <button id="aboutReadMoreBtn" class="read-more-btn">Read More <i
-                            class="fa-solid fa-chevron-down ms-1"></i></button>
-                    <div class="about-footer-link">
-                        <a href="#services" class="link-with-arrow">My Approach <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"Couldn’t be happier with how everything turned out. Steve made
+                                the whole process easy and stress free, and just got exactly what I was after straight
+                                away. It’s made a big difference thank you!"</p>
+                        </div>
+                        <button class="testimonial-read-more">Read more</button>
+                        <div class="testimonial-author-info">
+                            <p class="testimonial-author">Matthew Baynham</p>
+                            <p class="testimonial-business">M Baynham Decorating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-v3">
+                    <div class="bio-wrapper">
+                        <span class="bio-greeting">Hello</span>
+                        <h3 class="bio-name">I’m <span>Steve.</span></h3>
+                        <p class="bio-main">I work for a digital agency in Ripon and have collaborated with a wide range
+                            of
+                            brands over the years, from established companies to growing startups across sectors
+                            like e-commerce, retail & more.</p>
+                        <div id="aboutTextMore" class="about-text-more">
+                            <p class="bio-sub">I help businesses strengthen their online presence with better
+                                visibility,
+                                reaching the right audience and converting traffic into meaningful results. From
+                                building
+                                brand
+                                awareness to driving sales, the focus is always on turning that traffic into real
+                                business
+                                growth.</p>
+                        </div>
+                        <button id="aboutReadMoreBtn" class="read-more-btn">Read More <i
+                                class="fa-solid fa-chevron-down ms-1"></i></button>
+                        <div class="about-footer-link">
+                            <a href="#services" class="link-with-arrow">My Approach <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,7 +167,8 @@
                 <span class="section-subtitle">HOW I CAN HELP</span>
                 <h2>Services</h2>
                 <p class="section-description">Helping your business grow and reach more customers through effective,
-                    tailored digital marketing that’s built around your specific goals.</p>
+                    tailored digital marketing that’s built <span style="white-space: nowrap;">around your specific
+                        goals.</span></p>
             </div>
 
             <div class="services-interactive-wrapper">
@@ -196,52 +234,256 @@
         <div class="bg-glow glow-top-right"></div>
     </section>
 
+    <!-- Results Section -->
+    <section class="results section-padding" id="results">
+        <!-- Glows mirroring How It Works background -->
+        <div class="bg-glow glow-top-left"></div>
+        <div class="bg-glow glow-top-right"></div>
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>Results</h2>
+                <p>Driving real business growth through tailored strategies that improve visibility, engagement, and
+                    overall performance.</span></p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="results-tabs reveal">
+                <button class="results-tab-btn active" data-tab="grid-paid-ads">Paid Ads</button>
+                <button class="results-tab-btn" data-tab="grid-organic-social">Organic Social</button>
+                <button class="results-tab-btn" data-tab="grid-digital-pr">Digital PR</button>
+            </div>
+
+            <!-- Paid Ads Grid -->
+            <div class="results-grid active reveal" id="grid-paid-ads">
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="facebook_ads_thumb.jpg" alt="Facebook Ads Strategy">
+
+                    </div>
+                    <div class="result-content">
+                        <h3>Facebook Ads</h3>
+                        <p>By refreshing the ad creative and sharpening the audience targeting for a lifestyle brand, I
+                            drove a major spike in leads. This growth maintained high quality and a profitable return on
+                            spend.</p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+2.5x</span>
+                                <span class="metric-label">Leads</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+3.8x</span>
+                                <span class="metric-label">ROAS</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+3.2%</span>
+                                <span class="metric-label">CTR</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="linkedin_ads_thumb.jpg" alt="LinkedIn Ads Strategy">
+
+                    </div>
+                    <div class="result-content">
+                        <h3>LinkedIn Ads</h3>
+                        <p>I refined the targeting for a B2B brand to reach the right decision-makers more effectively.
+                            By testing direct-response ad formats, I significantly lowered the cost per lead and
+                            improved overall enquiry quality.</p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+2.7%</span>
+                                <span class="metric-label">CTR</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+4.8%</span>
+                                <span class="metric-label">Engagement</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3mo</span>
+                                <span class="metric-label">Timeline</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Organic Social Grid -->
+            <div class="results-grid reveal" id="grid-organic-social">
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="organic-social-1.jpg" alt="Organic Social Media Presence">
+                    </div>
+                    <div class="result-content">
+                        <h3>Brand Growth & Visibility</h3>
+                        <p>I focused on consistent, value-led posting to build a stronger presence for a bespoke
+                            landscaping client. By encouraging community interaction and a distinct brand voice, I
+                            successfully scaled the audience and engagement.</p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+4.8%</span>
+                                <span class="metric-label">Engagement Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+35%</span>
+                                <span class="metric-label">Post Shares</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+1.2k</span>
+                                <span class="metric-label">Impressions</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="organic-social-2.jpg" alt="High Quality Social Content">
+
+                    </div>
+                    <div class="result-content">
+                        <h3>Professional Content Revamp</h3>
+                        <p>I introduced high-quality, professional imagery to elevate the brand’s identity for a
+                            lifestyle client. A consistent aesthetic and value-led schedule grew the audience and drove
+                            significant traffic to the site.
+                        </p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+12%</span>
+                                <span class="metric-label">Organic Traffic</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+1.8%</span>
+                                <span class="metric-label">CTR</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+28%</span>
+                                <span class="metric-label">Follower Growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Digital PR Grid -->
+            <div class="results-grid reveal" id="grid-digital-pr">
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="digital-pr-1.jpg" alt="National PR & Content Writing">
+                    </div>
+                    <div class="result-content">
+                        <h3>Reactive PR</h3>
+                        <p>I monitored news cycles to secure placements for a lifestyle brand. By providing expert
+                            commentary and timely insights, I positioned the client in national publications to help
+                            grow brand awareness and authority.</p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">1.4M</span>
+                                <span class="metric-label">Potential Reach</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10+</span>
+                                <span class="metric-label">Backlinks</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+65%</span>
+                                <span class="metric-label">Brand Searches</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="result-card">
+                    <div class="result-img-wrapper">
+                        <img src="digital-pr-2.jpg" alt="Regional Press & Local Outreach">
+
+                    </div>
+                    <div class="result-content">
+                        <h3>Regional Press Outreach</h3>
+                        <p>I secured wide media coverage for a local business across regional news outlets. By sharing
+                            engaging content increasing the brand’s visibility in the local press.</p>
+                        <div class="result-metrics">
+                            <div class="metric">
+                                <span class="metric-value">14</span>
+                                <span class="metric-label">Regional Placements</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">450k+</span>
+                                <span class="metric-label">Local Reach</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+7%</span>
+                                <span class="metric-label">Referral Traffic</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Work With Me Section -->
     <section class="why-work-with-me section-padding" id="why-work-with-me">
+        <!-- Background Effects -->
+        <div class="bg-glow glow-left"></div>
+        <div class="bg-glow glow-right"></div>
         <div class="container">
             <div class="section-header text-center">
                 <h2>Why Work With Me</h2>
             </div>
 
-            <div class="why-grid">
-                <!-- Card 1 -->
-                <div class="why-card">
-                    <div class="why-icon-wrapper">
-                        <div class="why-icon"><i class="fa-solid fa-comments"></i></div>
-                        <h3>Working Solely With Me</h3>
+            <div class="why-main-content reveal">
+                <!-- Visual Side -->
+                <div class="why-visual-side">
+                    <div class="why-image-container">
+                        <img src="steve-profile.jpg" alt="Steve Robinson Digital Marketing" class="why-profile-img">
+                        <div class="why-image-glow"></div>
                     </div>
-                    <p>You will be dealing directly with me. This direct partnership means
-                        everything is clear, efficiently communicated, and fully understood from day one. There is no
-                        getting lost in translation, just straightforward progress.</p>
                 </div>
-                <!-- Card 2 -->
-                <div class="why-card">
-                    <div class="why-icon-wrapper">
-                        <div class="why-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <h3>Local Digital Marketing in Yorkshire</h3>
+
+                <!-- Content Side -->
+                <div class="why-content-side">
+                    <div class="why-points-grid">
+                        <!-- Point 1 -->
+                        <div class="why-card">
+                            <div class="why-icon-wrapper">
+                                <div class="why-icon"><i class="fa-solid fa-comments"></i></div>
+                                <h3>Work Solely With Me</h3>
+                            </div>
+                            <p>You’ll deal directly with me. This ensures clear communication and straightforward
+                                progress from
+                                day one, with nothing lost in translation.</p>
+                        </div>
+                        <!-- Point 2 -->
+                        <div class="why-card">
+                            <div class="why-icon-wrapper">
+                                <div class="why-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <h3>Local Digital Marketing</h3>
+                            </div>
+                            <p>Based in Harrogate, I have an understanding of the local market. I enjoy working
+                                closely with local businesses across the wider Yorkshire region.
+                            </p>
+                        </div>
+                        <!-- Point 3 -->
+                        <div class="why-card">
+                            <div class="why-icon-wrapper">
+                                <div class="why-icon"><i class="fa-solid fa-check"></i></div>
+                                <h3>Focused on Results</h3>
+                            </div>
+                            <p>I prioritise the work that genuinely accelerates your business. My strategy centres on
+                                elevating
+                                your brand visibility to naturally attract high-quality leads.</p>
+                        </div>
+                        <!-- Point 4 -->
+                        <div class="why-card">
+                            <div class="why-icon-wrapper">
+                                <div class="why-icon"><i class="fa-solid fa-file-contract"></i></div>
+                                <h3>No Binding Contracts</h3>
+                            </div>
+                            <p>Rather than locking you into long-term agreements, I focus on delivering value and
+                                transparency,
+                                so working together remains a choice driven by your success.</p>
+                        </div>
                     </div>
-                    <p>Based right here in Harrogate, I have an understanding of the local market. I enjoy working
-                        closely with local businesses and supporting companies across the wider Yorkshire region.
-                    </p>
-                </div>
-                <!-- Card 3 -->
-                <div class="why-card">
-                    <div class="why-icon-wrapper">
-                        <div class="why-icon"><i class="fa-solid fa-check"></i></div>
-                        <h3>Focused on Results</h3>
-                    </div>
-                    <p>I prioritise the work that genuinely accelerates your business. My strategy centres on elevating
-                        your brand visibility so you naturally attract high-quality leads that convert.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="why-card">
-                    <div class="why-icon-wrapper">
-                        <div class="why-icon"><i class="fa-solid fa-file-contract"></i></div>
-                        <h3>No Binding Contracts</h3>
-                    </div>
-                    <p>Rather than locking you into long-term agreements, I focus on delivering real value. I prefer to
-                        earn your ongoing business through clear results and total transparency, so working together
-                        always remains a choice based on success, not a signed contract.</p>
                 </div>
             </div>
         </div>
@@ -253,7 +495,7 @@
     <section class="contact section-padding" id="contact">
         <div class="container">
             <!-- How it Works Process -->
-            <div class="process-header reveal">
+            <div class="process-header reveal" id="lets-work-together">
                 <h2 class="text-center mb-5">How it works</h2>
             </div>
 
@@ -271,8 +513,8 @@
                     <div class="step-number">2</div>
                     <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
                     <h3>Understand Your Business</h3>
-                    <p>We’ll talk through your business, your current marketing and what you’re trying to achieve. This
-                        helps identify what’s working, what’s not and where the real opportunities are.</p>
+                    <p>We’ll talk through your business, marketing, and goals. This helps identify what’s working,
+                        what’s not, and where real opportunities are.</p>
                 </div>
                 <!-- Step 3 -->
                 <div class="process-step">
@@ -284,21 +526,24 @@
                 </div>
             </div>
 
-            <div class="contact-wrapper reveal" id="lets-work-together">
+            <div class="contact-wrapper reveal">
                 <div class="contact-cta-card glass-card">
                     <div class="cta-content">
                         <span class="cta-subtitle">READY TO START?</span>
                         <h2>Let's work together</h2>
                         <p class="cta-desc">Whether you’re looking for ongoing digital marketing support or a one off
-                            project to boost your brand online, <span style="white-space: nowrap;">I’m here to help.</span><br><br><strong>Drop me an email
+                            project to boost your brand online, <span style="white-space: nowrap;">I’m here to
+                                help.</span><br><br><strong>Drop me an email
                                 today!</strong></p>
 
                         <div class="contact-pills-v3">
                             <a href="mailto:SteveRobinsonOnline@gmail.com" class="contact-pill-v3">
-                                <div class="pill-icon"><i class="fa-solid fa-envelope"></i></div>
-                                <div class="pill-text">
-                                    <span>EMAIL ME</span>
-                                    <p>SteveRobinsonOnline@gmail.com</p>
+                                <div class="pill-content-wrapper">
+                                    <span class="pill-subtitle">EMAIL ME</span>
+                                    <div class="pill-main-row">
+                                        <div class="pill-icon"><i class="fa-solid fa-envelope"></i></div>
+                                        <p>SteveRobinsonOnline@gmail.com</p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -343,6 +588,7 @@
                     <ul class="footer-links">
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#results">Results</a></li>
                         <li><a href="#why-work-with-me">Why Work With Me</a></li>
                     </ul>
                 </div>

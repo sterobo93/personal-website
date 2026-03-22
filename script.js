@@ -211,4 +211,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // Testimonial Toggle
+    const testimonialBtns = document.querySelectorAll('.testimonial-read-more');
+    testimonialBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const content = btn.previousElementSibling;
+            if (content && content.classList.contains('testimonial-content')) {
+                content.classList.toggle('expanded');
+                btn.textContent = content.classList.contains('expanded') ? 'Read less' : 'Read more';
+            }
+        });
+    });
+
+    // Results Section Tab Switching
+    const tabBtns = document.querySelectorAll('.results-tab-btn');
+    const grids = document.querySelectorAll('.results-grid');
+
+    if(tabBtns.length > 0 && grids.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                grids.forEach(grid => grid.classList.remove('active'));
+                
+                const targetId = btn.getAttribute('data-tab');
+                const targetGrid = document.getElementById(targetId);
+                if(targetGrid) {
+                    targetGrid.classList.add('active');
+                }
+            });
+        });
+    }
 });
