@@ -138,7 +138,8 @@ ul {
 }
 
 .section-padding {
-    padding: 4.5rem 0;
+    padding: 6rem 0;
+    scroll-margin-top: 160px; 
 }
 
 .bg-light {
@@ -1757,7 +1758,7 @@ ul {
 }
 
 .contact.section-padding {
-    padding: 1.5rem 0 6rem; /* Top padding reduced since we are bypassing the header landing */
+    padding: 6rem 0;
 }
 
 /* Ensure no reveal-based shifting for contact section targets */

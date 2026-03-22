@@ -21,8 +21,8 @@ document.addEventListener('click', (e) => {
         if (targetElement) {
             e.preventDefault();
             
-            // Calculate dynamic offset (Standard 120px for footer/standard jumps)
-            const offset = 120;
+            // Calculate dynamic offset (Calibrated 190px to match ideal screenshotSpacing)
+            const offset = 190;
             
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
