@@ -57,7 +57,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 155px; /* Offset for tall fixed navbar */
+    scroll-padding-top: 120px; /* Reduced to better blend with section padding */
     overflow-x: hidden;
     width: 100%;
 }
@@ -1757,8 +1757,12 @@ ul {
     margin-bottom: 2rem;
 }
 
+.contact.section-padding {
+    padding-top: 1.5rem; /* Reduced to avoid double-gap with scroll-padding */
+}
+
 .contact-wrapper {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
