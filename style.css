@@ -700,6 +700,10 @@ ul {
     margin-bottom: 0.15rem; /* Minimal baseline spacing */
 }
 
+.testimonial-business a:hover {
+    color: white;
+}
+
 @media (max-width: 992px) {
     .about-main-row {
         grid-template-areas: 
